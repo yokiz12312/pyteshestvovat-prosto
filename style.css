@@ -41,6 +41,11 @@ header {
     color: rgb(255, 255, 255);
 }
 
+.menuu{
+    display: flex;
+    gap: 35px;
+}
+
 .header__logo {
     display: flex;
     align-items: center;
@@ -48,22 +53,19 @@ header {
 }
 
 .header__logo img {
-    width: 50px;
+    width: 240px;
     height: 100%;
-}
-
-.logo__text {
-    font-size: 28px;
 }
 
 .header__nav {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .header__nav__link {
     color: rgb(255, 255, 255);
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .header__contacts {
@@ -301,26 +303,26 @@ header {
 }
 
 
-.whywe{
+.whywe {
     margin-top: 167px;
     margin-bottom: 167px;
 }
 
 
-.whywe__title{
+.whywe__title {
     font-size: 32px;
     font-weight: 400px;
     font-size: 40px;
-    
+
     margin-bottom: 2ch;
 }
 
-.whywe__blocks{
+.whywe__blocks {
     display: flex;
     justify-content: space-between;
 }
 
-.whywe__block{
+.whywe__block {
     width: 316px;
 
     height: 267px;
@@ -337,18 +339,19 @@ header {
     border-radius: 10px;
 }
 
-.whywe__block-title{
+.whywe__block-title {
     font-size: 22px;
     font-weight: 700;
 
     margin-bottom: 8px;
 }
 
-.whywe__block-text{
+.whywe__block-text {
     font-size: 18px;
     text-align: center;
 }
-.whywe__icon{
+
+.whywe__icon {
     width: 40px;
 
     margin-bottom: 12px;
@@ -361,7 +364,7 @@ header {
 .experts__title {
     font-size: 32px;
     font-weight: 700;
-    
+
     margin-bottom: 2ch;
 }
 
@@ -487,168 +490,203 @@ header {
     font-size: 18px;
     line-height: 1.42;
 
-    color: rgba(53, 53, 53, 0.741);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* ПОДБОР ТУРА */
 
-.request {
-    margin-top: 167px;
-    margin-bottom: 100px;
-    padding: 70px 20px;
+
+
+
+.final {
+    margin-bottom: 167px;
+    text-align: center;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0.301)),
+        url(./image/backgrounds/final.jxl);
+    background-size: cover;
+    background-position: center;
+
+    padding: 67px 10px;
+    border-radius: 12px;
+}
+
+.final__title {
+    font-size: 52px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.final__text {
+    font-size: 22px;
+    font-weight: 500;
+
+    max-width: 640px;
+    margin: 24px auto 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.form__forms {
+    display: flex;
+    gap: 16px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 16px 18px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.form__button {
+    padding: 16px 0;
+
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.form__button:hover {
+    color: black;
+    background-color: white;
+}
+
+.form__agree {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+
+    text-align: left;
+}
+
+.form__checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: black;
+}
+
+.form__agree-text {
+    font-size: 15px;
+}
+
+.form__link {
+    color: black;
+    text-decoration: underline;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.footer {
+    padding: 64px 0 32px 0;
 
     color: white;
+    background-color: rgb(24, 30, 63);
+}
 
-    background: linear-gradient(
-        135deg,
-        #203b52,
-        #397b9b
-    );
+.footer a{
+    color: white;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-bottom: 48px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer__logo {
+    width: 240px;
+    height: 100%;
+    margin:  0;
+}
+
+.footer__logo-text {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.footer__block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.linkcs{
+    display: flex;
+    gap: 10px;
+}
+
+.footer__link img{
+    width: 43px;
+    height: 43px;
 }
 
 
-/* Контейнер блока */
+.footer__link:hover {
+    opacity: 0.6;
+}
 
-.request__container {
+.footer__text {
+    font-size: 18px;
+}
+
+.footer__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+
+    padding-top: 32px;
 }
 
-
-/* Текст слева */
-
-.request__content {
-    width: 55%;
-}
-
-.request__label {
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-}
-
-.request__title {
-    font-size: 48px;
-    line-height: 1.2;
-    margin-bottom: 24px;
-}
-
-.request__text {
-    font-size: 21px;
-    line-height: 1.6;
-}
-
-
-/* Форма */
-
-.request__form {
-    width: 40%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-
-    padding: 30px;
-
-    background-color: white;
-    color: #203b52;
-
-    border-radius: 16px;
-
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-}
-
-
-/* Названия полей */
-
-.request__field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
+.footer__copyright {
     font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__naverg {
+    padding: 10px 15px;
+
+    font-size: 18px;
     font-weight: 600;
-}
-
-
-/* Поля ввода */
-
-.request__input {
-    width: 100%;
-
-    padding: 13px 14px;
-
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 400;
-
-    color: #203b52;
-    background-color: white;
-
-    border: 1px solid #dce6ed;
-    border-radius: 8px;
-
-    outline: none;
-}
-
-.request__input:focus {
-    border-color: #397b9b;
-}
-
-
-/* Поле пожеланий */
-
-.request__textarea {
-    resize: vertical;
-    min-height: 110px;
-}
-
-
-/* Согласие на обработку данных */
-
-.request__agreement {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-
-    font-size: 14px;
-    line-height: 1.5;
-
-    color: #4c5b65;
-}
-
-.request__checkbox {
-    margin-top: 3px;
-    flex-shrink: 0;
-
-    width: 16px;
-    height: 16px;
-
-    accent-color: #397b9b;
-}
-
-
-/* Кнопка */
-
-.request__button {
-    padding: 15px 12px;
-
-    font-family: inherit;
-    font-size: 17px;
-    font-weight: 600;
-
     color: white;
-    background-color: #397b9b;
 
-    border: none;
-    border-radius: 8px;
-
-    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 4px;
 }
 
-.request__button:hover {
-    background-color: #203b52;
+.footer__naverg:hover {
+    color: black;
+    background-color: white;
 }

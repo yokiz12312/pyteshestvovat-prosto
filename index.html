@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Путешествовать просто</title>
+    <title>Путешествуй просто</title>
 </head>
 
 <body>
@@ -15,25 +15,23 @@
         <!-- Логотип -->
 
         <div class="header__logo">
-            <img src="./image/icons/Group 37.svg" alt="" class="logo__img">
-            <h1 class="logo__text One">Путешествовать<br>просто</h1>
+            <img src="./image/icons/logo.svg" alt="" class="logo__img">
         </div>
 
         <!-- Навигационное меню -->
+        <div class="menuu">
+            <nav class="header__nav">
+                <a href="" class="header__nav__link">Туры</a>
+                <a href="" class="header__nav__link">О нас</a>
+                <a href="" class="header__nav__link">Контакты</a>
+            </nav>
 
-        <nav class="header__nav">
-            <a href="" class="header__nav__link">Туры</a>
-            <a href="" class="header__nav__link">Преимущества</a>
-            <a href="" class="header__nav__link">О нас</a>
-            <a href="" class="header__nav__link">Контакты</a>
-        </nav>
-
-        <!-- Логотип телефона и выдвигающийся номер -->
-        <div class="header__contacts">
-            <img src="./image/icons/phone-svgrepo-com.svg" alt="" class="contacts__img">
-            <a href="tel:+78006760767" class="contacts__link">+7 (607) 607-67-67</a>
+            <!-- Логотип телефона и выдвигающийся номер -->
+            <div class="header__contacts">
+                <img src="./image/icons/phone-svgrepo-com.svg" alt="" class="contacts__img">
+                <a href="tel:+78006760767" class="contacts__link">+7 (607) 607-67-67</a>
+            </div>
         </div>
-
         <!-- Кнопка "Подобрать тур" -->
         <a href="" class="header__tour-button">Подобрать тур</a>
     </header>
@@ -293,75 +291,69 @@
     <!-- Чзв конец -->
 
 
-    <!-- По= -->
+    <section class="final container">
 
-    <section class="request">
+        <h2 class="final__title One">Ваш идеальный отпуск ближе, чем кажется!</h2>
+        <p class="final__text">Расскажите, каким вы представляете свой отдых, а мы поможем подобрать подходящий вариант
+        </p>
 
-        <div class="request__container container">
-
-            <!-- Текст слева -->
-
-            <div class="request__content">
-
-                <p class="request__label">
-                    ПУТЕШЕСТВУЙТЕ ПРОСТО
-                </p>
-
-                <h2 class="request__title">
-                    Ваш идеальный отпуск ближе, чем кажется!
-                </h2>
-
-                <p class="request__text">
-                    Расскажите, каким вы представляете свой отдых,
-                    а мы поможем подобрать подходящий вариант.
-                </p>
-
+        <form class="form">
+            <div class="form__forms">
+                <input class="form__input" type="text" placeholder="Ваше имя">
+                <input class="form__input" type="tel" placeholder="Телефон">
             </div>
 
-            <!-- Форма справа -->
+            <textarea class="form__input form__textarea" name="wishes" rows="3"
+                placeholder="Пожелания к отдыху"></textarea>
 
-            <form class="request__form" onsubmit="return false;">
+            <button class="form__button" type="button">Получить подборку туров</button>
 
-                <label class="request__field">
-                    Ваше имя
-
-                    <input class="request__input" type="text" name="name" placeholder="Как к вам обращаться?" required>
-                </label>
-
-                <label class="request__field">
-                    Телефон
-
-                    <input class="request__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
-                </label>
-
-                <label class="request__field">
-                    Пожелания к отдыху
-
-                    <textarea class="request__input request__textarea" name="wishes"
-                        placeholder="Куда хотите поехать? Какой отдых предпочитаете?" rows="4"></textarea>
-                </label>
-
-                <label class="request__agreement">
-
-                    <input class="request__checkbox" type="checkbox" required>
-
-                    <span>
-                        Я согласен(на) на обработку персональных данных
-                    </span>
-
-                </label>
-
-                <button class="request__button" type="submit">
-                    Получить подборку туров
-                </button>
-
-            </form>
-
-        </div>
+            <label class="form__agree">
+                <input class="form__checkbox" type="checkbox" name="agree" required>
+                <div class="form__agree-text">Я согласен(а) на обработку персональных данных и принимаю
+                    <a href="./pol/Политика обработки данных.txt" target="_blank" download="Политка обработки данных"
+                        class="form__link">политику конфиденциальности</a>
+                </div>
+            </label>
+        </form>
 
     </section>
 
-    <!-- По= конец -->
+    <footer class="footer">
+        <div class="footer__content container">
+
+            <img class="footer__logo" src="./image/icons/logo.svg" alt="">
+
+            <div class="footer__block">
+                <h3 class="footer__title">Контакты</h3>
+                <a href="tel:+76076076767" class="footer__link">+7 (607) 607-67-67</a>
+                <a href="mailto:travel@travel.ru" class="footer__link">travel@travel.ru</a>
+                <p class="footer__text">г. Казань, ул. Баумана, 67</p>
+            </div>
+
+            <div class="footer__block">
+                <h3 class="footer__title">Информация</h3>
+                <a href="./pol/Политика обработки данных.txt" target="_blank" download="Политка обработки данных"
+                    class="footer__link">Политика конфиденциальности</a>
+
+                <h3 class="footer__title">Мы в сети</h3>
+                <div class="linkcs">
+                    <a href="#" class="footer__link"><img src="./image/icons/max.svg" alt=""></a>
+                    <a href="#" class="footer__link"><img src="./image/icons/tg.svg" alt=""></a>
+                    <a href="#" class="footer__link"><img src="./image/icons/vk.svg" alt=""></a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="footer__bottom container">
+            <p class="footer__copyright">© 2026 Путешествуй просто.</p>
+            <a href="#" class="footer__naverg">Наверх</a>
+        </div>
+    </footer>
+
 </body>
 
 </html>
